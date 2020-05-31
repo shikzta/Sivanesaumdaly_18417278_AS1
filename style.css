@@ -1,0 +1,143 @@
+#top {                                          /* The "#" refers back to the id "top" */
+    background-color: yellow;                  /* The "top" id has a background of the colour yellow */
+    padding: 10px                               /* The "top" id has a padding of 10px */
+}
+
+
+
+body{                                           /* This changes the following to the body element */
+    background-color: black;                  /* Everything within the body element has a background colour of black */
+    font-family: Arial, Helvetica, sans-serif;  /* The font within the body element will be Arial, if it cant find it the it will check for Helvetica if not san-serif */
+    font-size: 14px;                            /* The font size within the body element will be 14px */
+    color: navy;                              /* The text within the body element will be navy coloured */
+}
+
+
+img{                                            /* Everything within this "img" bracket will affect the logo image */
+    border: 0px;                                /* The image will have a 0px border */
+    margin: 0px;                                /* The image will have a 0px margin */
+    padding-right: 80px;                        /* The padding on the right of the image will be 80px */
+}
+
+h1 {                                            /* This changes all the following within the h1 element */
+    font-size: 3em;                             /* The font-size within h1 will be 3em */
+    font-weight: 500;                           /* The font weight ( so the boldness) will be 500 */
+    font-family: 'Pacifico', cursive;           /* The font family will be Pacifico (which was used from the google fonts website) if user computer does not have it, it will go to cursive */
+    letter-spacing: 20px;                       /* The spacing between the letters will be 20px */
+    Font-Variant: Small-Caps;                   /* This Font-Variant replaces lowercase letters with uppercase letters that are a similar height to the original lowercase ones. */
+    color: yellow;                            /* The text will be yellow */
+    background-color: black;                  /* The background colour of h1 will be black */
+    border: 0px;                                /* The border of h1 will be 0px */
+    margin: 0px;                                /* The margin of h1 will be 0px */
+    padding-top: 0px;                           /* The padding on top of h1 will be 0px */
+    padding-bottom: 0px;                        /* The padding on botton of h1 will be 0px */
+    border-bottom-style: dashed;                /* The border style on botton of h1 will be dashed */
+}
+
+p{
+    font-family: monospace;
+    font-size: 18px;
+}
+
+#top h1 {                                       /* Here the id selector and an element is preceded by a hash "#" to be defined */
+    font-size: 2em;                             /* The font size of text in h1 within the top id is 2em */
+    font-weight: 400;                           /* font-weight of value 400 is the standard weight.*/
+    font-family: 'Hammersmith One', sans-serif; /* The font family will be Hammersmith One (which was used from the google fonts website) if user computer does not have it, it will go to sans-serif */
+    letter-spacing: 0.4em;                      /* The spaces between the letters is 0.4em */
+    text-align: center;                         /* This will align the text within "h1" to be centered on the page*/
+    background-color: black;                  /* The background colour will be black */
+    font-family: 'Pacifico', cursive;           /* The font family will be Pacifico (which was used from the google fonts website) if user computer does not have it, it will go to cursive */
+    color: red;                               /* The text within top h1 will be red */
+    font-weight: bold;                          /* The text will be bold */
+}
+
+
+.intro{                                         /* The "." calls to the class within the id */
+    font-size: 1.3em;                           /* The font size within class "intro" will be 1.3em */
+    font-weight: normal;                        /* The font weight within class "intro" will be normal */
+    font-family: 'Lato', sans-serif;            /* The font family within class "intro" will be Lato (which was used from the google fonts website) if user computer does not have it, it will go to sans-serif */
+    text-align: center;                         /* This will align the text within class "intro" to be centered */
+    background-color: yellow;                 /* The background colour within class "intro" will be yellow */
+    color: black;                             /* The text colour within class "intro" will be black */
+    font-style: normal;                         /* The font style within class "intro" will be normal */
+    line-height: 1.5;                           /* This has set the height of the lines, without adjusting the font. the 1.5 is the multiple of the font-size*/
+}
+
+.navigation {                                   /* The "." calls to the navigation class */
+    display: flex;                              /* The flexbox layout is used */
+    flex-flow: row;                             /* Navigation to be displayed in a row */
+    justify-content: flex-start;                /* Navigation starts at start */
+    
+    list-style: none;                           /* No style on the list */
+    margin: 0;                                  /* The margin is 0 */
+    background: greenyellow;                  /* The background is greenyellow */
+  }
+  
+  .navigation a {                                /* The "." calls to the navigation class then refines to the link "a"*/
+    text-decoration: none;                       /* There is no text decoration on the links */
+    display: block;                              /* This element starts up a whole new line */
+    padding: 1em;                                /* The oadding oon the links are 1em */
+    color: red;                                /* The link's font is red */
+    font-size: 2em;                              /* The font size is 2em */
+    text-align: center
+  }
+  
+  .navigation a:hover {                           /* The following is what will happen when the link is hovered upon */
+    background: #1565C0;                        /* When the link is hovered upon the background turns "#1565C0" */
+  }
+  
+  @media all and (max-width: 800px) {             /*The @media adjusts the navigation bar once the screen has been adjusted*/
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+                                                   /*The @media adjusts the navigation bar once the screen has been adjusted*/
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }                                               /* code referenced from website https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    
+}
+
+article{
+    background-color: red;
+    color: black;
+    display: grid;                                  /* Instructs that this element should be displayed in a grid system */
+    grid-template-columns: 1fr 1fr 1fr;             /* places the amount of columns and the space between by 1fr */
+    margin: 0 auto;                                 /* A margin is fored for the element that's based on the size */
+    padding: 10px;                                  /* Generates a 100 px padding */
+    grid-column-gap: 10px;                          /* Generates a 10 pixels gap between each column */
+}
+
+h2 {                                                /* This changes all the following within the h2 element */
+    border-width: 10px;                             /* The border width will be 10px */
+    border-left-width: 10px;                        /* The border left width will be 10px */
+    border-right-width: 10px;                       /* The border right width will be 10px */
+    border-color: red;                            /* The border colour is red */
+    border-style: outset;                           /* The border style is outset */
+    font-size: 1.5em;                               /* The font size is 1.5em */
+    background-color: #ccc;                       /* The background colour is #ccc */
+    margin: 20px;                                   /* 20-pixel width space around the secondary header */
+    padding: 40px;                                  /* fat from the 40-pixel width padding */
+    font-weight: normal;                            /* The font weight is normal */
+}
+table {                                             /* This changes all the following within the table element */
+    width: 100%;                                    /* The table width is 100% */
+    border-collapse: separate;
+
+  }
+  
+  table, td, th {                                    /*Here I have grouped table, td and th as the will all have a border of 1px*/
+    border: 5px solid black;                       /* The border has a 5px gap */
+    color: yellow;                                 /* The text is yellow */
+  }
+
+
+footer {                                              /* This changes all the following within the footer */
+    background-color: black;                        /* The background colour is black */
+    border-top: 10px solid yellow;                  /* Creates a border along the top of the footer. 1 pixel solid, black */
+    border-bottom: 0px solid orange;                /* Creates a border along the bottom. 1 Pixel solid, black */
+    padding-bottom: 10px;                             /* Creates a padding at the bottom of the element by 30 pixels */
+    text-align: center;                               /*moves the 2 icons to the cener of the page*/
+}

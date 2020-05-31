@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">        <!--Language stated in HTML tag-->
+    
+    <head>  <!-- everything required to be stated is in this head tag -->
+        <meta charset="utf-8" lang="en">
+        <title>Web Development Learning Site</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1e28325235.js" crossorigin="anonymous"></script>
+    </head>      <!--head tag closes-->
+
+    <body>      <!--body tag opens-->
+
+        <header>        <!--header tag opens-->
+            <h1><img src="SHPH-LOGO.png" alt="Website logo"> <!--This logo I created on paint-->
+            STUDY HARD PLAY HARD
+            </h1>
+        </header>       <!--header tag closes-->
+
+            <div id="top"> <!--Here i have used the "div" element to divide this HTML page and label the id as "top"-->
+
+            
+            
+                <h1> Let's go through the tutorials! </h1> <!--within this div element I am going to use it as an introductory to the website.-->
+            
+                <p class="intro">HTML TUTORIAL 
+                             <br>
+                             CSS TUTORIAL
+                             <br>
+                             UID TUTORIAL
+                </p>
+            </div>      <!--Div tag closed-->
+
+        <ul class="navigation">     <!--Navigation to go between webpages-->
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+
+        <article>       <!--article tag opens-->
+            <h2>Tutorial on HTML</h2><!--heading stated then content begins-->
+            <p> Welcome to the world of code! Last year, millions of learners from our community started with HTML. Why? HTML is the skeleton of all web pages. It is often the first language learned by developers, marketers, and designers and is core to front-end development work. If this is your first time touching code, we are excited for what you are about to create.
+                So what exactly is HTML? HTML provides structure to the content appearing on a website, such as images, text, or videos. Right-click on any page on the internet, choose Inspect, and you will see HTML in a panel of your screen.
+                HTML stands for HyperText Markup Language
+            </p>
+
+            <p>
+                Tags<br>
+                The basic structure of an HTML document includes tags, which surround content and apply meaning to it.<br>
+                Closing tags<br>
+                The /body and /html put a close to their respective elements (more on elements in a moment).<br>
+                Attributes<br>
+                Tags can also have attributes, which are extra bits of information. 
+                Attributes appear inside the opening tag and their values sit inside quotation marks. 
+                They look something like "tag attribute="value" Margarin /tag".<br>
+                Elements<br>
+                Tags tend not to do much more than mark the beginning and end of an element. 
+                Elements are the bits that make up web pages.
+                You would say, for example, that everything that is in between (and includes) the body and /body tags is the body element. 
+                As another example, whereas “title” and “/title” are tags, “title Rumple Stiltskin /title” is a title element.<br>
+                Line breaks<br>
+                The line-break tag can also be used to separate lines like this: "br" <br>
+            </p>
+            
+        </article>      <!--article tag closes-->
+
+        <article>       <!--article tag opens-->
+            <h2>Tutorial on CSS and UID</h2>
+            <p> CSS, or Cascading Styles Sheets, is a way to style and present HTML. Whereas the HTML is the meaning or content, 
+                the style sheet is the presentation of that document.
+                Styles don’t smell or taste anything like HTML, they have a format of ‘property: value’ and most properties can be applied to most HTML tags.<br>
+                UID stands for User Interface Design<br>
+                User interface design is essentially the design of user interfaces software an example could be computers or mobiles
+                and any other electronic devices.
+            </p>
+
+            <p>
+                display<br>
+                This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.<br>
+                Lengths and Percentages<br>
+                There are many property-specific units for values used in CSS, 
+                but there are some general units that are used by a number of properties and it is worth familiarizing yourself with these before continuing.<br>
+                px (such as font-size: 12px) is the unit for pixels.<br>
+                em (such as font-size: 2em) is the unit for the calculated size of a font. So “2em”, for example, is two times the current font size.<br>
+                font-family<br>
+                This is the font itself, such as Times New Roman, Arial, or Verdana.<br>
+                font-size<br>
+                font-size sets the size of the font. 
+                Be careful with this — text such as headings should not just be an HTML paragraph (p) in a large font - 
+                you should still use headings (h1, h2 etc.) even though, in practice, you could make the font-size of a paragraph 
+                larger than that of a heading (not recommended for sensible people).<br>
+                Now talking about UID<br>
+                Material measurements<br>
+                Material Design layouts are visually balanced. Most measurements align to an 8dp grid applied, which aligns both spacing and the overall layout. Smaller components, such...
+                Material Design layouts are visually balanced. Most measurements align to an 8dp grid applied, which aligns both spacing and the overall layout.
+                Smaller components, such as icons and type, can align to a 4dp grid.<br>
+                Responsive layout grid<br>
+                The Material Design responsive layout grid is an overarching guide to the placement of components and elements. The responsive layout grid adapts to screen sizes...
+                The Material Design responsive layout grid is an overarching guide to the placement of components and elements. The responsive layout grid adapts to screen sizes and orientation, ensuring consistency across layouts.<br>
+                Navigation and motion<br>
+                Navigation transitions use motion to guide users between two screens in your app. They help users orient themselves by expressing your app's hierarchy, using movement...
+                Navigation transitions use motion to guide users between two screens in your app. They help users orient themselves by expressing your app's hierarchy, using movement to indicate how elements are related to one another.
+                For example, when an element expands to fill the entire screen, the act of expansion expresses that the new screen is a child element. The screen from which it expanded is its parent element.<br>
+                
+            </p>
+        </article>      <!--article tag closes-->
+    
+
+
+        <footer>    <!--In the footer i have added my social media contact details using font awesome-->
+            <a href="https://www.facebook.com/schikan.siva/">   <i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/shikzta/?hl=en">   <i class="fab fa-instagram-square fa-3x"></i></a>
+        </footer>
+
+    </body>
+</html>
+    
